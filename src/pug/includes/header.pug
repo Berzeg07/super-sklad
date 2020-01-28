@@ -1,1 +1,44 @@
-p Шапка
+header.header
+    .header__inner
+        .header__top
+            .burger
+                
+            .logo
+                .logo__img
+                    img(src="img/logo.png" alt="Супер склад")
+                ul.logo__article
+                    li Super
+                    li Sklad
+
+            .city-select.city-select__desctop
+                select
+                    option Москва
+                    option Омск           
+                    option Самара
+            
+            a(href="tel:+74959233161").phone.phone_mob 8 (495) 923 31 61 
+            
+        nav.main-nav
+            .city-select.city-select_mob
+                select
+                    option Москва
+                    option Омск           
+                    option Самара
+            ul.main-nav__list
+                li
+                    a(href="#").about-link О компании
+                li
+                    a(href="#").arenda-link Арендовать контейнер
+                li
+                    a(href="#").sklad-link Арендовать склад
+                li
+                    a(href="#").price-link Прайс лист
+                li
+                    a(href="#").pay-link Оплата
+                li
+                    a(href="#").contact-link Контакты
+            
+            .main-nav__btn
+                button(type="button").btn Отправить заявку 
+
+            a(href="tel:+74959233161").phone.phone_desctop 8 (495) 923 31 61                                                 

@@ -130,8 +130,14 @@ a {
     text-decoration: none;
 }
 
+label{
+    display: inline-block;
+    cursor: pointer;
+}
+
 img {
     max-width: 100%;
+    height: auto;
 }
 
 body{
@@ -146,10 +152,4 @@ html {
 *::after,
 *::before {
     box-sizing: inherit;
-}
-
-a,
-input,
-textarea {
-    outline: none;
 }
