@@ -1,6 +1,6 @@
 $(document).ready(function() {
     // custom select *
-    $('.city-select select').select2();
+    $('.custom-select select').select2();
 
     // mobile menu *
     $('.burger').click(function() {
@@ -20,6 +20,40 @@ $(document).ready(function() {
             });
         }
     });
+
+    // main slider *
+
+
+    var swiper = null;
+    var initSwiper = function(simulateTouch) {
+        if (swiper) {
+            swiper.destroy();
+        }
+        var bannerSlider = new Swiper('.banner-slider', {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            loop: true,
+            simulateTouch: simulateTouch,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    };
+    var changeMedia = function(screen) {
+        if (screen.matches) {
+            initSwiper(true);
+        } else {
+            initSwiper(false);
+        }
+    };
+    var screen = window.matchMedia("(max-width: 1279px)");
+    changeMedia(screen);
+    screen.addListener(changeMedia);
 
 
 
