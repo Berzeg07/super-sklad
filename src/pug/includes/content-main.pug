@@ -104,25 +104,31 @@ main
         
         .cont-types
             .container
+                .cont-size
+                    .cont-size__item 5
+                    .cont-size__item ft
+                    
                 .container__title Контейнер 5 футов
                 .container-top
                     .container__slider.swiper-container
                         .swiper-wrapper
                             .swiper-slide
-                                |1
+                                img(src="img/cont-1.png")
                             .swiper-slide
-                                |2
+                                img(src="img/cont-1.png")
+                                
                             .swiper-slide
-                                |3
+                                img(src="img/cont-1.png")
+                                
                         .swiper-pagination 
                                             
                     ul.container__list
                         li
                             span Длина:
-                            b 6,0 м
+                            b 2,4 м
                         li
                             span Ширина:
-                            b 2,35 м
+                            b 1,5 м
                         li
                             span Высота
                             b 2,7 м
@@ -137,21 +143,28 @@ main
                                 |10 м
                                 sup 3       
                 
-                ul.container__term
-                    li
-                        span Срок аренды:
-                    li                                
-                        input(type="radio" name="container-term" id="one-month")
-                        label(for="one-month") 1 мес
-                    li
-                        input(type="radio" name="container-term" id="three-month")
-                        label(for="three-month") 3 мес
-                    li
-                        input(type="radio" name="container-term" id="six-month")
-                        label(for="six-month") 6 мес
-                    li
-                        input(type="radio" name="container-term" id="twelve-month")
-                        label(for="twelve-month") 12 мес
+                .container__term-wrap
+                    .term-title Срок аренды:
+                    ul.container__term
+                        li                                
+                            input(type="radio" name="container-term" id="one-month" checked).term-radio
+                            label(for="one-month") 1 мес
+                        li
+                            input(type="radio" name="container-term" id="three-month").term-radio
+                            label(for="three-month") 3 мес
+                        li
+                            input(type="radio" name="container-term" id="six-month").term-radio
+                            label(for="six-month") 6 мес
+                        li
+                            input(type="radio" name="container-term" id="twelve-month").term-radio
+                            label(for="twelve-month") 12 мес
+                        li
+                            .custom-select.select-term
+                                select
+                                    option Укажите срок
+                                    option 18 мес
+                                    option 2 года
+                                    
                 
                 ul.container__price
                     li
@@ -161,7 +174,213 @@ main
                     li
                         button.btn Отправить заявку                            
                     
+            .container
+                .cont-size
+                    .cont-size__item 10
+                    .cont-size__item ft
+                .container__title Контейнер 10 футов
+                .container-top
+                    .container__slider.swiper-container
+                        .swiper-wrapper
+                            .swiper-slide
+                                img(src="img/cont-2.png")
+                            .swiper-slide
+                                img(src="img/cont-2.png")
+                                
+                            .swiper-slide
+                                img(src="img/cont-2.png")
+                                
+                        .swiper-pagination 
+                                            
+                    ul.container__list
+                        li
+                            span Длина:
+                            b 3,0 м
+                        li
+                            span Ширина:
+                            b 2,3 м
+                        li
+                            span Высота
+                            b 2,7 м
+                        li
+                            span Площадь:
+                            b 
+                                |7,0 м
+                                sup 2
+                        li
+                            span Объем
+                            b 
+                                |19 м
+                                sup 3       
                 
+                .container__term-wrap
+                    .term-title Срок аренды:
+                    ul.container__term
+                        li                                
+                            input(type="radio" name="container-term2" id="one-month2" checked).term-radio
+                            label(for="one-month2") 1 мес
+                        li
+                            input(type="radio" name="container-term2" id="three-month2").term-radio
+                            label(for="three-month2") 3 мес
+                        li
+                            input(type="radio" name="container-term2" id="six-month2").term-radio
+                            label(for="six-month2") 6 мес
+                        li
+                            input(type="radio" name="container-term2" id="twelve-month2").term-radio
+                            label(for="twelve-month2") 12 мес
+                        li
+                            .custom-select.select-term
+                                select
+                                    option Укажите срок
+                                    option 18 мес
+                                    option 2 года
+                                    
+                
+                ul.container__price
+                    li
+                        span Стоимость аренды:
+                    li
+                        i 3500 руб.
+                    li
+                        button.btn Отправить заявку                                
                                   
-                               
-                  
+            .container
+                .cont-size
+                    .cont-size__item 20
+                    .cont-size__item ft
+                    
+                .container__title Контейнер 20 футов
+                .container-top
+                    .container__slider.swiper-container
+                        .swiper-wrapper
+                            .swiper-slide
+                                img(src="img/cont-3.png")
+                            .swiper-slide
+                                img(src="img/cont-3.png")
+                                
+                            .swiper-slide
+                                img(src="img/cont-3.png")
+                                
+                        .swiper-pagination 
+                                            
+                    ul.container__list
+                        li
+                            span Длина:
+                            b 6,0 м
+                        li
+                            span Ширина:
+                            b 2,35 м
+                        li
+                            span Высота
+                            b 2,4 м
+                        li
+                            span Площадь:
+                            b 
+                                |15,0 м
+                                sup 2
+                        li
+                            span Объем
+                            b 
+                                |33 м
+                                sup 3       
+                
+                .container__term-wrap
+                    .term-title Срок аренды:
+                    ul.container__term
+                        li                                
+                            input(type="radio" name="container-term3" id="one-month3" checked).term-radio
+                            label(for="one-month3") 1 мес
+                        li
+                            input(type="radio" name="container-term3" id="three-month3").term-radio
+                            label(for="three-month3") 3 мес
+                        li
+                            input(type="radio" name="container-term3" id="six-month3").term-radio
+                            label(for="six-month3") 6 мес
+                        li
+                            input(type="radio" name="container-term3" id="twelve-month3").term-radio
+                            label(for="twelve-month3") 12 мес
+                        li
+                            .custom-select.select-term
+                                select
+                                    option Укажите срок
+                                    option 18 мес
+                                    option 2 года
+                                    
+                
+                ul.container__price
+                    li
+                        span Стоимость аренды:
+                    li
+                        i 3500 руб.
+                    li
+                        button.btn Отправить заявку                                               
+            .container
+                .cont-size
+                    .cont-size__item 40
+                    .cont-size__item ft
+                    
+                .container__title Контейнер 40 футов
+                .container-top
+                    .container__slider.swiper-container
+                        .swiper-wrapper
+                            .swiper-slide
+                                img(src="img/cont-4.png")
+                            .swiper-slide
+                                img(src="img/cont-4.png")
+                                
+                            .swiper-slide
+                                img(src="img/cont-4.png")
+                                
+                        .swiper-pagination 
+                                            
+                    ul.container__list
+                        li
+                            span Длина:
+                            b 12,0 м
+                        li
+                            span Ширина:
+                            b 2,3 м
+                        li
+                            span Высота
+                            b 2,7 м
+                        li
+                            span Площадь:
+                            b 
+                                |30,0 м
+                                sup 2
+                        li
+                            span Объем
+                            b 
+                                |76 м
+                                sup 3       
+                
+                .container__term-wrap
+                    .term-title Срок аренды:
+                    ul.container__term
+                        li                                
+                            input(type="radio" name="container-term4" id="one-month4" checked).term-radio
+                            label(for="one-month4") 1 мес
+                        li
+                            input(type="radio" name="container-term4" id="three-month4").term-radio
+                            label(for="three-month4") 3 мес
+                        li
+                            input(type="radio" name="container-term4" id="six-month4").term-radio
+                            label(for="six-month4") 6 мес
+                        li
+                            input(type="radio" name="container-term4" id="twelve-month4").term-radio
+                            label(for="twelve-month4") 12 мес
+                        li
+                            .custom-select.select-term
+                                select
+                                    option Укажите срок
+                                    option 18 мес
+                                    option 2 года
+                                    
+                
+                ul.container__price
+                    li
+                        span Стоимость аренды:
+                    li
+                        i 3500 руб.
+                    li
+                        button.btn Отправить заявку                              

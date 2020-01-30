@@ -22,8 +22,6 @@ $(document).ready(function() {
     });
 
     // main slider *
-
-
     var swiper = null;
     var initSwiper = function(simulateTouch) {
         if (swiper) {
@@ -54,6 +52,17 @@ $(document).ready(function() {
     var screen = window.matchMedia("(max-width: 1279px)");
     changeMedia(screen);
     screen.addListener(changeMedia);
+
+    // types slider *
+    var bannerSlider = new Swiper('.container__slider', {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
 
 
 
