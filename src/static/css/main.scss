@@ -1302,6 +1302,10 @@
 .rent-table {
     width: 100%;
     margin-top: 38px;
+    margin-bottom: 50px;
+    @media(min-width: 1280px) {
+        margin-bottom: 96px;
+    }
 
     thead {
         font-family: "SFProDisplay-Regular";
@@ -1465,4 +1469,179 @@
     height: 56px;
     font-size: 20px;
     display: none;
+}
+
+.discount {
+    padding-top: 20px;
+    background: #E05409;
+    @media(min-width: 1280px) {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        padding: 16px 15px 35px;
+    }
+}
+
+.discount__img {
+    position: relative;
+    width: 200px;
+    margin: 0 auto;
+    @media(min-width: 1280px) {
+        width: 220px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+
+    img {
+        width: 124px;
+        position: relative;
+        z-index: 20;
+        margin: 0 auto;
+        @media(min-width: 1280px) {
+            width: 153px;
+        }
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 26px;
+        right: 4px;
+        width: 190px;
+        height: 190px;
+        border-radius: 10em;
+        border: 15px solid white;
+        background: #E98750;
+        z-index: 10;
+        @media(min-width: 1280px) {
+            top: 35px;
+            right: 26px;
+        }
+    }
+    @media(min-width: 1500px) {
+        left: 100px;
+
+        &:before {
+            content: '';
+            position: absolute;
+            left: -60px;
+            top: 100px;
+            width: 34px;
+            height: 25px;
+            background: url("../img/k-1.png") no-repeat center;
+        }
+    }
+    @media(min-width: 1900px) {
+        left: 150px;
+    }
+}
+
+.discount__sircle {
+    width: 200px;
+    height: 200px;
+    border-radius: 10em;
+    overflow: hidden;
+    text-align: center;
+    padding-top: 3px;
+    @media(min-width: 1280px) {
+        height: 263px;
+        padding-top: 17px;
+        overflow: visible;
+    }
+}
+
+.discount__title {
+    font-family: "TTNorms-Bold";
+    padding: 15px 20px;
+    text-align: center;
+    color: white;
+    font-size: 32px;
+    @media(min-width: 1280px) {
+        text-align: left;
+        padding: 0;
+    }
+}
+
+.discount__article {
+    font-family: "TTNorms-Regular";
+    font-size: 18px;
+    text-align: center;
+    padding: 15px 5px;
+    color: white;
+    line-height: 26px;
+    @media(min-width: 1280px) {
+        padding: 15px 0 0;
+        text-align: left;
+    }
+    @media(min-width: 1900px) {
+        width: 610px;
+    }
+
+    b {
+        font-family: "TTNorms-Medium";
+    }
+}
+
+.discount__action {
+    font-size: 22px;
+    color: white;
+    font-family: "TTNorms-Bold";
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 8px;
+
+
+    li {
+        margin-bottom: 10px;
+        @media(min-width: 1600px) {
+            &:first-child{
+                display: flex;
+            }
+        }
+
+        .btn {
+            width: 256px;
+        }
+    }
+
+    a {
+        color: white;
+    }
+
+    span {
+        display: block;
+        @media(min-width: 1600px) {
+            margin-right: 10px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.discount__text {
+    @media(min-width: 1280px) {
+        max-width: 773px;
+        margin-right: 50px;
+        margin-left: 220px;
+    }
+    @media(min-width: 1600px) {
+        margin-left: 280px;
+    }
+    @media(min-width: 1500px) {
+        position: relative;
+
+        &:after {
+            content: '';
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 34px;
+            height: 25px;
+            background: url("../img/k-2.png") no-repeat center;
+        }
+    }
+    @media(min-width: 1900px) {
+        margin-right: 100px;
+    }
 }
