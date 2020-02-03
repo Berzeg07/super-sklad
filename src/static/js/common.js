@@ -64,6 +64,130 @@ $(document).ready(function() {
         },
     });
 
+    // Area skider *
+    var bannerSlider = new Swiper('.area__slider', {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+
+    // Area maps *
+    ymaps.ready(init);
+    function init() {
+        var center = [55.744743, 37.513215];
+        var myMap = new ymaps.Map('map1', {
+            center: center,
+            controls: [],
+            zoom: 16
+        }, {
+            searchControlProvider: 'yandex#search'
+
+        });
+
+        myMap.behaviors.disable('scrollZoom');
+
+        var myPlacemark = new ymaps.Placemark(center, {
+            // Свойства.
+            // Содержимое иконки, балуна и хинта.
+            balloonContent: 'Промышленный проезд, 3',
+            hintContent: 'Промышленный проезд, 3'
+        }, {
+            // Опции.
+            iconLayout: 'default#image',
+            // iconImageHref: 'img/map-ic.png',
+            iconImageSize: [42, 42]
+            // preset: 'twirl#violetIcon'
+        });
+
+        myMap.geoObjects.add(myPlacemark);
+
+        var center2 = [55.861883, 37.547782];
+        var myMap2 = new ymaps.Map('map2', {
+            center: center2,
+            controls: [],
+            zoom: 16
+        }, {
+            searchControlProvider: 'yandex#search'
+
+        });
+
+        myMap2.behaviors.disable('scrollZoom');
+
+        var myPlacemark2 = new ymaps.Placemark(center2, {
+            // Свойства.
+            // Содержимое иконки, балуна и хинта.
+            balloonContent: 'Дмитровское шоссе, 83А',
+            hintContent: 'Дмитровское шоссе, 83А'
+        }, {
+            // Опции.
+            iconLayout: 'default#image',
+            // iconImageHref: 'img/map-ic.png',
+            iconImageSize: [42, 42]
+            // preset: 'twirl#violetIcon'
+        });
+
+        myMap2.geoObjects.add(myPlacemark2);
+        // ================================
+        var center3 = [55.603736, 37.460933];
+        var myMap3 = new ymaps.Map('map3', {
+            center: center3,
+            controls: [],
+            zoom: 16
+        }, {
+            searchControlProvider: 'yandex#search'
+
+        });
+
+        myMap3.behaviors.disable('scrollZoom');
+
+        var myPlacemark3 = new ymaps.Placemark(center3, {
+            // Свойства.
+            // Содержимое иконки, балуна и хинта.
+            balloonContent: 'Адмирала Корнилова вл. 5',
+            hintContent: 'Адмирала Корнилова вл. 5'
+        }, {
+            // Опции.
+            iconLayout: 'default#image',
+            // iconImageHref: 'img/map-ic.png',
+            iconImageSize: [42, 42]
+            // preset: 'twirl#violetIcon'
+        });
+
+        myMap3.geoObjects.add(myPlacemark3);
+        // ================================
+        var center4 = [55.851798, 37.576205];
+        var myMap4 = new ymaps.Map('map4', {
+            center: center4,
+            controls: [],
+            zoom: 16
+        }, {
+            searchControlProvider: 'yandex#search'
+
+        });
+
+        myMap3.behaviors.disable('scrollZoom');
+
+        var myPlacemark4 = new ymaps.Placemark(center4, {
+            // Свойства.
+            // Содержимое иконки, балуна и хинта.
+            balloonContent: 'Нововладыкинский проезд, 8',
+            hintContent: 'Нововладыкинский проезд, 8'
+        }, {
+            // Опции.
+            iconLayout: 'default#image',
+            // iconImageHref: 'img/map-ic.png',
+            iconImageSize: [42, 42]
+            // preset: 'twirl#violetIcon'
+        });
+
+        myMap4.geoObjects.add(myPlacemark4);
+    }
+
+
 
 
 
