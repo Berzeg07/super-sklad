@@ -75,6 +75,9 @@ $(document).ready(function() {
         },
     });
 
+    // Phone-mask
+     $(".phone-inp").mask("7 (999) 999-99-99");
+
     // Area maps *
     ymaps.ready(init);
     function init() {
@@ -169,7 +172,7 @@ $(document).ready(function() {
 
         });
 
-        myMap3.behaviors.disable('scrollZoom');
+        myMap4.behaviors.disable('scrollZoom');
 
         var myPlacemark4 = new ymaps.Placemark(center4, {
             // Свойства.
@@ -185,6 +188,33 @@ $(document).ready(function() {
         });
 
         myMap4.geoObjects.add(myPlacemark4);
+        // ================================
+        var center5 = [55.755814, 37.617635];
+        var myMap5 = new ymaps.Map('mainMap', {
+            center: center5,
+            controls: [],
+            zoom: 8
+        }, {
+            searchControlProvider: 'yandex#search'
+
+        });
+
+        myMap5.behaviors.disable('scrollZoom');
+
+        var myPlacemark5 = new ymaps.Placemark(center5, {
+            // Свойства.
+            // Содержимое иконки, балуна и хинта.
+            balloonContent: 'Москва',
+            hintContent: 'Москва'
+        }, {
+            // Опции.
+            iconLayout: 'default#image',
+            // iconImageHref: 'img/map-ic.png',
+            iconImageSize: [42, 42]
+            // preset: 'twirl#violetIcon'
+        });
+
+        myMap5.geoObjects.add(myPlacemark5);
     }
 
 

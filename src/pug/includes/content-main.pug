@@ -811,3 +811,38 @@ main
                 .area__item
                     .area__map#map4
                     button(type="button").btn.area__btn Отправить заявку    
+        
+        .main-map
+            h2.main-title Расположение на карте 
+            .main-map__inner#mainMap
+        
+    .request
+        h2.main-title Онлайн заявка на аренду контейнера
+        .request__inner.content
+            .request__item
+                ul.request__list
+                    li Официально
+                    li Без посредников и переплат:
+                .request__img
+                    img(src="img/cont-logo.png" alt="Онлайн заявка на аренду контейнера")
+                .request__photo
+                    img(src="img/girl.png" alt="Онлайн заявка на аренду контейнера")
+                    
+            .request__item
+                form.form(action="#")
+                    label.form__name
+                        input(type="text" placeholder="Имя").inp
+                    label.form__phone
+                        input(type="text" placeholder="Телефон").inp.phone-inp
+                    label.form__text
+                        textarea.textarea(placeholder="Комментарий")
+                    .form__btn
+                        button(type="submit").btn Отправить заявку
+                    input(type="checkbox" checked).check#check
+                    label(for="check") Я согласен на обработку персональных данных
+                            
+                            
+                    
+                
+            
+            
