@@ -90,7 +90,7 @@
     max-width: 1920px;
     width: 100%;
     margin: 0 auto;
-    padding: 10px 0;
+    padding: 10px 0 0px;
 }
 
 .header__top {
@@ -2498,6 +2498,12 @@
     max-width: 430px;
     margin: 0 auto 30px;
     @media(min-width: 1600px) {
+        display: none;
+    }
+}
+
+@media print {
+    .header{
         display: none;
     }
 }
